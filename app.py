@@ -6,9 +6,9 @@ import vosk
 import json
 from flask import Flask, render_template, request, Response
 
-app = Flask(__name__, template_folder="C:\\Users\\NIKIL\\Desktop\\CapStone\\SpeechRecog")
+app = Flask(__name__, template_folder="path")
 
-model_path = r"C:\Users\NIKIL\Desktop\CapStone\vosk-model-en-us-0.22-lgraph"
+model_path = r"C:\Users\xyz\Desktop\vosk-model-en-us-0.22-lgraph"
 model = vosk.Model(model_path)
 recognizer = vosk.KaldiRecognizer(model, 16000)
 
